@@ -1,68 +1,102 @@
-Project Overview
+# Customer Churn Prediction – BCG Strategy Consulting Simulation
 
-This project analyzes customer churn behavior for a utility company operating in a competitive energy market.
+## Project Overview
 
-The objective was to investigate whether price sensitivity is the primary driver of churn and to build a predictive model to estimate churn probability.
+This project was completed during the AXAIA Data Science Virtual Internship.
 
+Our team analyzed customer churn in the energy sector using historical customer data and pricing information. The objective was to identify key drivers of churn and build a predictive model that could help the business retain customers.
 
-Business Objective
+Our team of eight analysts delivered the final presentation and received the Best Presentation Award.
 
-Understand key drivers of customer churn
+---
 
-Test the hypothesis that price sensitivity influences churn
+## Business Problem
 
-Develop a predictive framework for churn risk
+Customer churn significantly impacts revenue in subscription-based industries.
 
+The consulting hypothesis was that price sensitivity might be the primary driver of customer churn.
 
-Datasets Used
+This project investigates whether price changes truly influence churn or if other behavioral factors are more important.
 
-Historical customer data
+---
 
-Historical pricing data
+## Dataset
 
-Churn indicator dataset
+The analysis used three datasets:
 
+- Historical customer data
+- Historical pricing data
+- Churn indicator dataset
 
-Methodology
+---
 
-Exploratory Data Analysis
+## Project Workflow
 
-Feature Engineering
+1. Business Understanding
+2. Exploratory Data Analysis
+3. Feature Engineering
+4. Predictive Modeling
+5. Insight Generation
 
-Binary Classification Modeling
+---
 
-Model Evaluation using Accuracy, Precision & Recall
+## Feature Engineering
 
-Feature Importance Analysis
+Several new variables were created to capture price volatility and behavioral patterns:
 
+- Average price change across months
+- Maximum price variance
+- Log transformation of skewed variables
+- Customer duration features
+- Dummy variables for categorical data
 
-Key Findings
+---
 
-Churn rate ≈ 10%
+## Modeling
 
-Price sensitivity was not the strongest predictor
+The problem was framed as a binary classification task.
 
-Profitability and consumption patterns were stronger drivers
+Models used:
 
-Model performed well for non-churners but required improvement for recall
+- Logistic Regression
+- Random Forest
 
-Models Used
+Evaluation metrics included:
 
-Logistic Regression
+- Accuracy
+- Precision
+- Recall
 
-Random Forest Classifier
+Recall was particularly important due to the class imbalance in churn.
 
-Business Recommendations
+---
 
-Focus retention strategies on high-margin customers
+## Key Insight
 
-Avoid blanket price reductions
+Contrary to expectations, price sensitivity was not the strongest predictor of churn.
 
-Improve proactive churn monitoring systems
+Behavioral variables such as customer tenure and usage patterns had stronger predictive power.
 
-Tools & Technologies
-Python
-Pandas
-NumPy
-Scikit-learn
+---
+
+## Business Recommendations
+
+- Implement early churn detection systems
+- Develop targeted retention campaigns
+- Improve customer engagement strategies
+
+---
+
+## Tools Used
+
+Python  
+Pandas  
+NumPy  
+Scikit-learn  
 Matplotlib / Seaborn
+
+---
+
+## Author
+
+Taofeeqah Balogun
